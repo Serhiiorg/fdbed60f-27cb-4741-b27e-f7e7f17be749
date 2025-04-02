@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 350 100% 98%;
+    --foreground: 210 20% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 12%;
+
+    --primary: 352 76% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 16% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 350 20% 90%;
+    --muted-foreground: 210 10% 40%;
+
+    --accent: 5 100% 74%;
+    --accent-foreground: 210 20% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 350 20% 90%;
+    --input: 350 20% 90%;
+    --ring: 352 76% 60%;
+
+    --radius: 0.5rem;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 210 20% 12%;
+
+    --info: 200 98% 39%;
+    --info-foreground: 0 0% 100%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 20% 12%;
+    --sidebar-primary: 352 76% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 5 100% 74%;
+    --sidebar-accent-foreground: 210 20% 12%;
+    --sidebar-border: 350 20% 90%;
+    --sidebar-ring: 352 76% 60%;
+
+    --chart-1: 352 76% 60%;
+    --chart-2: 5 100% 74%;
+    --chart-3: 200 16% 20%;
+    --chart-4: 142 76% 36%;
+    --chart-5: 38 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+  }
+}
